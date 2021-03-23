@@ -27,12 +27,41 @@ git directory ->push -> 서버(remote) -> pull 다시로컬로다운로드
 
 `git rm --cached *` staging area에서 -> 다시 untracked된 working directory
 
+트래킹 하고 싶지 않은 Git과 Github에 올리고싶지않은 파일들은 git ignore파일에 추가할수있다.
+
+어떤 파일의 내용이 수정되었는지 git diff를 통해 확인(working directory만 비교)   
+`git diff --staged` 명령어로 staging area에 있는것을 비교   
+[diff] tool = vscode / [difftool "vscode"] cmd = code --wait --diff $LOCAL $REMOTE  
+git difftool (--staged) 로 vscode에서 확인
 
 
+`git commit -am "message"`  
+add 사용하지 않고 working directory와 staging area 전부커밋
 
+rm 을 이용해서 삭제하면 삭제된 내용은 staging area에 포함되지 않기 때문에 이것을 commit하기위해서는 git add 를이용해 추가해준다음 commit.
 
+git rm 을 이용하면 바로 staging area에 추가된다.  
+위와같이 git mv 이용해 파일명 변경후 staging area에 추가
 
+**See History**  
+`git log` 커밋리스트  
+`git log -p`  각 커밋의 수정된 내용들도 확인할수있다.  
+`git log --oneline` 간편하게 확인  
+`git log -n` 최근 commit중 n개만 보겠다  
+`git show hashcode` 해당하는 특정commit 내용  
+••
 
+HEAD는 지금 내가 보고있는 commit을 가리킨다.  
+head~1 지금 있는 현재 헤드의 이전 부모 버전을 가르킨다.
+
+checkout 각 커밋의 해쉬코드를이용해서 원하는시점으로 돌아갈수있다.  
+`git checkout master` 로 master branch 첫번째로 다시 돌아오기.  
+branch 이동할수있다.
+
+`git log --oneline --graph --all`로 모든 브랜치확인
+
+**git log 꾸미기**  
+`git log --pretty` 로꾸밀수있다.
 
 
 
