@@ -54,14 +54,19 @@ git rm 을 이용하면 바로 staging area에 추가된다.
 HEAD는 지금 내가 보고있는 commit을 가리킨다.  
 head~1 지금 있는 현재 헤드의 이전 부모 버전을 가르킨다.
 
-checkout 각 커밋의 해쉬코드를이용해서 원하는시점으로 돌아갈수있다.  
+`git checkout 각 커밋의 해쉬코드` 를이용해서 원하는시점으로 돌아갈수있다.  
 `git checkout master` 로 master branch 첫번째로 다시 돌아오기.  
 branch 이동할수있다.
 
 `git log --oneline --graph --all`로 모든 브랜치확인
 
 **git log 꾸미기**  
-`git log --pretty` 로꾸밀수있다.
+`git log --pretty` 명령어 로꾸밀수있다.
+
+**git tag**는 특정한 commit을 북마크 해두고싶을때 사용함으로써 내가원하는 부분으로 빠르게 전환 할수있다.  
+대부분 v.1.0.0 , v1.0.1 , v2(major).0(minor).0(fix)같이 제품을 릴리즈할때 버전을 많이 tag해둔다.  
+`git tag 원하는문자열 해쉬코드 -am ".."`  
+`git checkout -b 브랜치이름 태그내용`
 
 
 
