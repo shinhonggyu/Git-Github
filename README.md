@@ -50,6 +50,8 @@ path = "C:/Program Files/Perforce/p4merge"
 
 #### 버전을 삭제하지 않으면서 되돌리기 - git revert
 
+#### 히스토리보기 - git log
+
 
 
 
