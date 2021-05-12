@@ -98,7 +98,7 @@ git branch -d name
 #### cherry pick (필요한 commit만 쏙)      
 (master) git cherry-pick hashcode
 
-#### stash 
+#### stash
 
 
 
