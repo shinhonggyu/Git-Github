@@ -100,8 +100,7 @@ git branch -d name
 
 #### stash
 
-
-
+#### 취소하기
 
 
 
